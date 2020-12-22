@@ -1,8 +1,105 @@
-body {
-  background-color: red;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-body h1 {
-  color: blue;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.main-wrapper {
+  height: 100%;
+}
+
+.hero-nav-wrapper .navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.45);
+  height: 80px;
+  width: 100%;
+  z-index: 200;
+}
+
+.hero-nav-wrapper .navbar .check-btn {
+  position: absolute;
+  color: white;
+  right: 19px;
+  font-size: 52px;
+}
+
+.hero-nav-wrapper .navbar #toggle {
+  display: none;
+}
+
+.hero-nav-wrapper .navbar .logo {
+  position: absolute;
+  left: 19px;
+  color: white;
+  font-size: 20px;
+}
+
+.hero-nav-wrapper .navbar .nav-list {
+  list-style: none;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 80px;
+  height: 50vh;
+  width: 100%;
+  background-color: #2d3a4e;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.hero-nav-wrapper .navbar .nav-list a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.hero-nav-wrapper .navbar .nav-list a:hover {
+  background: white;
+  color: black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.hero-nav-wrapper .navbar .nav-list a:focus {
+  background: white;
+  color: black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.hero-nav-wrapper .navbar #toggle:checked ~ .nav-list {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 /*# sourceMappingURL=style.css.map */
