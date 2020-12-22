@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
 
-$color: red;
-$textColor: blue;
-
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +10,6 @@ body {
   font-weight: 400;
 }
 
-// background-color: $color;
 .main-wrapper {
   height: 100%;
 }
@@ -199,9 +195,6 @@ footer {
       width: 25px;
       margin: 0 20px;
     }
-    .twitter {
-      color: blue;
-    }
   }
 
   .copy-right {
@@ -306,8 +299,13 @@ footer {
       justify-content: space-evenly;
 
       .card-wrapper {
-        // flex-direction: ;
         margin: unset;
+
+        button:hover {
+          background-color: black;
+          color: white;
+          cursor: pointer;
+        }
       }
     }
   }

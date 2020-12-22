@@ -245,10 +245,6 @@ footer .icons-wrapper img {
   margin: 0 20px;
 }
 
-footer .icons-wrapper .twitter {
-  color: blue;
-}
-
 footer .copy-right p {
   color: white;
   font-size: 18px;
@@ -360,6 +356,11 @@ footer .copy-right p {
   }
   .services .cards-container .card-wrapper {
     margin: unset;
+  }
+  .services .cards-container .card-wrapper button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
   }
   footer {
     -webkit-box-orient: horizontal;
