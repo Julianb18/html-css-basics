@@ -16,8 +16,7 @@ body {
 }
 
 .hero-nav-wrapper .navbar {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,17 +26,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.8);
   height: 80px;
   width: 100%;
-  z-index: 200;
 }
 
 .hero-nav-wrapper .navbar .check-btn {
   position: absolute;
   color: white;
-  right: 19px;
-  font-size: 52px;
+  right: 22px;
+  font-size: 35px;
 }
 
 .hero-nav-wrapper .navbar #toggle {
@@ -46,7 +44,7 @@ body {
 
 .hero-nav-wrapper .navbar .logo {
   position: absolute;
-  left: 19px;
+  left: 22px;
   color: white;
   font-size: 20px;
 }
@@ -70,8 +68,7 @@ body {
   top: 80px;
   height: 50vh;
   width: 100%;
-  background-color: #2d3a4e;
-  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: translateX(100%);
@@ -82,6 +79,7 @@ body {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+  padding: 15px 20px;
 }
 
 .hero-nav-wrapper .navbar .nav-list a:hover {
@@ -101,5 +99,67 @@ body {
 .hero-nav-wrapper .navbar #toggle:checked ~ .nav-list {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.hero-nav-wrapper .hero {
+  height: 100vh;
+  padding: 80px 0 0 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../images/hero.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero-nav-wrapper .hero .title-wrapper {
+  text-align: center;
+  padding: 0 40px;
+  color: white;
+}
+
+.hero-nav-wrapper .hero .title-wrapper h1 {
+  font-size: 41px;
+  font-weight: bold;
+  margin: 30px 0;
+  text-transform: uppercase;
+}
+
+.hero-nav-wrapper .hero .title-wrapper p {
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+.hero-nav-wrapper .hero .btns-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-nav-wrapper .hero .btns-wrapper button {
+  all: unset;
+  text-align: center;
+  border: 3px solid white;
+  width: 177px;
+  padding: 22px 0;
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero-nav-wrapper .hero .btns-wrapper button:nth-child(1) {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
