@@ -162,4 +162,58 @@ body {
 .hero-nav-wrapper .hero .btns-wrapper button:nth-child(1) {
   margin-bottom: 20px;
 }
+
+.services {
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.services h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 35px;
+  margin: 20px 0 50px 0;
+}
+
+.services .card-wrapper {
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 20px;
+  margin-bottom: 60px;
+}
+
+.services .card-title {
+  text-align: center;
+}
+
+.services .card-title h3 {
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.services .card-title p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.services .card-btn button {
+  all: unset;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 3px solid black;
+  padding: 10px 40px;
+}
 /*# sourceMappingURL=style.css.map */
