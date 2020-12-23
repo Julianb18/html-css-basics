@@ -206,6 +206,8 @@ footer {
   }
 }
 
+// Styling for Desktop version
+
 @media (min-width: 768px) {
   .hero-nav-wrapper {
     .navbar {
@@ -244,7 +246,6 @@ footer {
           margin: unset;
           margin-top: 120px;
           margin-bottom: 60px;
-          text-transform: uppercase;
         }
 
         p {
