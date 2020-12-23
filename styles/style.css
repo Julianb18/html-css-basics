@@ -178,7 +178,20 @@ body {
   margin: 20px 0 50px 0;
 }
 
-.services .card-wrapper {
+.services .cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .cards-container .card-wrapper {
   border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,7 +264,7 @@ footer .copy-right p {
   padding: 0 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1060px) {
   .hero-nav-wrapper .navbar .check-btn {
     display: none;
   }
@@ -349,12 +362,16 @@ footer .copy-right p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .services .cards-container .card-wrapper {
-    margin: unset;
+    margin: 0 20px;
   }
   .services .cards-container .card-wrapper button:hover {
     background-color: black;
